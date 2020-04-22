@@ -1,0 +1,58 @@
+.services_table {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 700px;
+    margin: 40px auto auto auto;
+    border: 1px solid #e0e0e0;
+   // padding: 5px;
+}
+
+.services_table__row_caption{
+    display: flex;
+    height: 40px;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.services_table_row_fill{
+    background-color: #f2f5f5;
+}
+.services_table__row{
+    display: flex;
+    height: 40px;
+    flex-flow: row nowrap;
+    border-top: 1px solid #e0e0e0;
+    align-items: center;
+}
+.services_table__row:hover{
+    background-color: #f2f5f5;
+}
+
+.services_table__col_caption{
+    font-family: Arial,sans-serif;
+    font-size: 17px;
+    width: 350px;
+    text-align: center;
+
+    font-weight: 100;
+}
+.services_table__col_caption + .services_table__col_caption{
+    margin-left: 20px;
+}
+
+
+
+.services_table__col_price{
+    font-family: Arial,sans-serif;
+    font-size: 17px;
+    width: 350px;
+    margin-left: 20px;
+    font-weight: 600;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+}
+.services_table__col{
+    font-family: Arial,sans-serif;
+    font-size: 17px;
+    width: 350px;
+    text-align: center;
+}

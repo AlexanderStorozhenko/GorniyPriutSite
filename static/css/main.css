@@ -1,0 +1,137 @@
+body {
+   padding: 0;
+   margin: 0;
+}
+
+.wrapper{
+    width:1050px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidebar{
+    width: 25%;
+    height: 830px;
+    padding: 0 15px 15px 15px;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 75%;
+    background-color: rgb(252, 252, 252);
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px  rgba(210,210,210,1);
+
+}
+.text_center {
+    text-align: center;
+}
+.sender_mail_container{
+    display: none;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,20,20,0.5);
+    z-index: 5;
+}
+.sender_mail{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 35px auto 0 auto;
+    width: 400px;
+    height: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #15b34f;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.sender_mail__content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.sender_mail__content__input{
+    margin: 10px 0 0 0 ;
+    width: 220px;
+    height: 30px;
+}
+.sender_mail__content__input:invalid{
+    border:2px solid #f56875;
+}
+.sender_mail__content__text{
+    margin: 10px 0 0 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    resize: none;
+}
+.sender_mail__content__submit_block{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.sender_mail__content__submit_block button{
+    width: 110px;
+    height: 35px;
+}
+
+.sender_mail__content__submit_block button{
+    background: linear-gradient(#11b367, #108d3e);
+    border: 1px solid #4b4b4b;
+    color: white;
+    font-family: Arial,sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 110px;
+    height: 32px;
+
+}
+
+.sender_mail__content__submit_block button:active{
+    background: linear-gradient(#0e9556, #0c6d30);
+}
+
+.sender_mail__content__submit_block p{
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    color: #4b4b4b;
+}
+
+
+.sender_mail__close_btn{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 0;
+    background-color: #4b4b4b;
+}
+.sender_mail__close_btn img{
+    width: 95%;
+    height: 95%;
+}
